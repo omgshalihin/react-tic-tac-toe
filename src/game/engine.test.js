@@ -60,7 +60,7 @@ describe('Tic Tac Toe', () => {
       return currentMove(game).squares;
     };
 
-    test.skip('no winner in empty game', () => {
+    test('no winner in empty game', () => {
       const emptyGame = Array(0).fill(null);
       expect(calculateWinner(emptyGame)).toBeNull();
     });
